@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab');
+
+body {
+  background: #999;
+  font-family: 'Antic Slab', sans-serif;
+}
+
+.login-container {
+  width: 400px;
+  margin: 1em auto;
+  border-radius: 5px;
+  border: 2px solid #2e2e2e;
+  text-align: center;
+  padding-bottom: 0px;
+  background: #333;
+  color: #FFF;
+  min-width: 310px;
+}
+
+.login-container h1 {
+  color: #fff;
+  text-shadow: 2px 2px 2px #111;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container .form-group input[type=text],
+.login-container .form-group input[type=password] {
+  padding: 15px 15px 15px 15px;
+  min-width: 320px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #222;
+  background: #fff;
+  box-shadow: inset 5px 3px 6px 0px #999;
+}
+
+.login-container .form-group label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.login-container .form-group .submit {
+  border: 1px solid #222;
+  background: #ccc;
+  padding: 10px;
+  min-width: 160px;
+  font-family: 'helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  color: #222;
+  border-radius: 3px;
+}
+
+
+.login-container .form-group a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #eaeaea;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #FFEB3B;
+  ;
+  text-decoration: none;
+  font-family: 'Helvetica', sans-serif;
+  padding: 4px;
+}
+
+.login-container .form-group a:hover {
+  text-decoration: underline;
+}
+
+.login-container .form-group p {
+  font-size: 13px;
+  font-family: 'helvetica', arial, sans-serif;
+  color: #eaeaea;
+  line-height: 1.5em;
+}
+
+.login-container input:focus,
+.login-container a:focus {
+  outline: 2px solid orange;
+}
+
+@media screen and (max-width:400px) {
+  .login-container {
+    width: 100%
+  }
+
+  .login-container .form-group input[type=text],
+  .login-container .form-group input[type=password] {
+    padding: 15px 10px;
+    min-width: 260px;
+  }
+}
+
+fieldset {
+  outline: 0px;
+  border: 0px;
+}
+
+legend,
+.sr-only {
+  position: absolute;
+  opacity: 0;
+}
+
+.bordertop {
+  border-top: 1px solid #444;
+}
