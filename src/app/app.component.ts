@@ -6,10 +6,10 @@ import { AfterViewInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements AfterViewInit ,OnDestroy{
+export class AppComponent implements AfterViewInit, OnDestroy {
   title = '';
   @ViewChild('forget') forget: ElementRef<HTMLElement>;
-
+  qq:any
   constructor(private annoucer: LiveAnnouncer, private _ariaDescriber: AriaDescriber) {
   }
 
@@ -17,7 +17,7 @@ export class AppComponent implements AfterViewInit ,OnDestroy{
     this.annoucer.announce('歡迎進入登入頁面', 'assertive');
   }
 
- ngOnDestroy(){
-  this.annoucer.ngOnDestroy() ;
- }
+  ngOnDestroy() {
+    this.annoucer.ngOnDestroy();
+  }
 }
